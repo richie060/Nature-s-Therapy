@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/DoctorsAppointment/app/src/main/res/layout/activity_ask_doctor_patient.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/DoctorsAppointment/app/src/main/res/layout/activity_doctor_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/DoctorsAppointment/app/src/main/res/layout/activity_doctor_register.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/DoctorsAppointment/app/src/main/res/layout/activity_fix_appointment.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/DoctorsAppointment/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/DoctorsAppointment/app/src/main/res/layout/activity_main_patient.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/DoctorsAppointment/app/src/main/res/layout/activity_patient_login_register_choice.xml" value="0.10643115942028986" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/DoctorsAppointment/app/src/main/res/layout/activity_patient_register.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/DoctorsAppointment/app/src/main/res/layout/activity_registration_question.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/DoctorsAppointment/app/src/main/res/layout/activity_splash_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/DoctorsAppointment/app/src/main/res/layout/drawer_header.xml" value="0.1671195652173913" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/DoctorsAppointment/app/src/main/res/layout/fragment_common.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/DoctorsAppointment/app/src/main/res/layout/item_apt_request.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/DoctorsAppointment/app/src/main/res/layout/item_disease_or_doctor.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/DoctorsAppointment/app/src/main/res/layout/item_patient_apt.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/DoctorsAppointment/app/src/main/res/layout/switch_layout.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="Android API 33, extension level 3 Platform" project-jdk-type="Android SDK" />
+</project>

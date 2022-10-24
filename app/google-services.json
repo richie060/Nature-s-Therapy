@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "867485420011",
+    "project_id": "hmsf-7d15d",
+    "storage_bucket": "hmsf-7d15d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867485420011:android:9199d9a4104c3444e3b1ae",
+        "android_client_info": {
+          "package_name": "com.vaibhavmojidra.doctorsappointment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867485420011-9haber10fm1ahsimf4e56rr14t2gomt0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoLrBSjI6LD7AQNCrVFDomGYLYzBTLWsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "867485420011-9haber10fm1ahsimf4e56rr14t2gomt0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
