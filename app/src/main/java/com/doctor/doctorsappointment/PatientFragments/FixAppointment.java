@@ -4,11 +4,14 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.Toolbar;
+
 import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.app.TimePickerDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.TextView;
@@ -26,6 +29,7 @@ import doctor.doctorsappointment.R;
 
 public class FixAppointment extends AppCompatActivity {
 
+    private Toolbar toolBar;
     private TextView date,time;
     private String docid,name,addr,city,spl;
     private ProgressDialog progressDialog;
@@ -35,7 +39,15 @@ public class FixAppointment extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fix_appointment);
-        setTitle("Get Appointment");
+//        setTitle("Get Appointment");
+
+//        toolBar = findViewById(R.id.toolbar);
+//        setSupportActionBar(toolBar);
+//        getSupportActionBar().setTitle("Book appointment ");
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+
         date=findViewById(R.id.date);
         time=findViewById(R.id.time);
         TextView t=findViewById(R.id.name);
@@ -113,7 +125,7 @@ public class FixAppointment extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder=new AlertDialog.Builder(FixAppointment.this);
-                builder.setTitle("Confirmation").setMessage("Are you sure you want set an appointment with Dr. "+name+" on "+date.getText()+" at "+time.getText()+"?");
+                builder.setTitle("Confirmation").setMessage("Are you sure you want book an appointment with Therapist. "+name+" on "+date.getText()+" at "+time.getText()+"?");
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -179,4 +191,14 @@ public class FixAppointment extends AppCompatActivity {
         });
 
     }
+//    @Override
+//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+//        switch (item.getItemId()){
+//            case android.R.id.home:
+//                finish();
+//                return true;
+//            default:
+//                return super.onOptionsItemSelected(item);
+//        }
+//    }
 }

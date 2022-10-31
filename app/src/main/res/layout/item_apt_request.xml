@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/innerColor"
+    android:background="#8F9ADA"
     android:layout_marginTop="2dp"
     android:layout_marginBottom="2dp"
     android:elevation="3dp">
@@ -68,7 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="30sp"
             android:background="@color/main_button_round_background"
-            android:text="Confirm"
+            android:text="Accept"
             android:textSize="16sp"
             android:elevation="1dp"
             android:textAllCaps="false"
@@ -79,7 +79,7 @@
             android:layout_height="30sp"
             android:background="#F44336"
             android:elevation="1dp"
-            android:text="Delete"
+            android:text="Decline"
             android:textSize="16sp"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"></androidx.appcompat.widget.AppCompatButton>

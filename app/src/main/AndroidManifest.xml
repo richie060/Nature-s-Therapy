@@ -4,13 +4,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/app_icon"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DoctorsAppointment">
         <activity
-            android:name="com.doctor.doctorsappointment.SplashScreen"
+            android:name="com.doctor.doctorsappointment.AskDoctorPatient"
             android:exported="false" />
         <activity
             android:name="com.doctor.doctorsappointment.DoctorMainActivity"
@@ -29,10 +29,10 @@
             android:name="com.doctor.doctorsappointment.Select_regestrationActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.doctor.doctorsappointment.AskDoctorPatient"
+            android:name="com.doctor.doctorsappointment.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.doctor.doctorsappointment.LoginActivity"
+            android:name="com.doctor.doctorsappointment.SplashScreen"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

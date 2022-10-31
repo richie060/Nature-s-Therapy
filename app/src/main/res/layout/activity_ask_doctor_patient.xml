@@ -1,61 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AskDoctorPatient"
-    android:gravity="center"
-    android:background="@drawable/background"
     android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:background="#9E121212">
-        <LinearLayout
-            android:layout_width="wrap_content"
+
+
+    <ImageView
+        android:id="@+id/applogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/app_icon"
+        android:layout_gravity="center"
+        />
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="40dp"
+            android:text="Are you a"
+            android:textSize="25sp"
+            android:textStyle="bold"
             android:gravity="center"
-            android:background="@drawable/floating_plate"
-            android:elevation="10dp"
-            android:orientation="vertical">
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/cutive"
-                android:textStyle="italic"
-                android:text="You are "
-                android:textColor="@color/mainTextColor"
-                android:gravity="center"
-                android:textSize="25sp"/>
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/doctor"
-                android:layout_marginTop="25dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Doctor"
-                android:paddingLeft="50dp"
-                android:paddingRight="50dp"
-                android:textColor="@color/innerColor"
-                android:background="@drawable/custom_round_main_btn">
+            android:textColor="#000"
+            />
 
-            </androidx.appcompat.widget.AppCompatButton>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/patient"
-                android:layout_marginTop="25dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Patient"
-                android:paddingLeft="50dp"
-                android:paddingRight="50dp"
-                android:textColor="@color/innerColor"
-                android:background="@drawable/custom_round_main_btn">
+    <Button
+        android:id="@+id/patient"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Patient"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        />
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Or"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000"
+            />
+    <Button
+        android:id="@+id/doctor"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Therapist"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        />
 
-            </androidx.appcompat.widget.AppCompatButton>
-        </LinearLayout>
-    </LinearLayout>
+
 </LinearLayout>

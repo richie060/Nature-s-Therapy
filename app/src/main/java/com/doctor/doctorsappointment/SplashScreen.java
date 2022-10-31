@@ -40,7 +40,7 @@ public class SplashScreen extends AppCompatActivity {
                     SplashScreen.this.overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
                     SplashScreen.this.finish();
                 }else{
-                    SplashScreen.this.startActivity(new Intent(SplashScreen.this,LoginActivity.class));
+                    SplashScreen.this.startActivity(new Intent(SplashScreen.this,AskDoctorPatient.class));
                     SplashScreen.this.overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
                     SplashScreen.this.finish();
                 }

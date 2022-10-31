@@ -6,12 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 
 import doctor.doctorsappointment.R;
 
 public class AskDoctorPatient extends AppCompatActivity {
 
-    private AppCompatButton doctor,patient;
+    private Button doctor,patient;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +20,7 @@ public class AskDoctorPatient extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         doctor=findViewById(R.id.doctor);
         patient=findViewById(R.id.patient);
+
         doctor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

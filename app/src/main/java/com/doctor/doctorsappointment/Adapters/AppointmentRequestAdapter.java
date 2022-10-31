@@ -61,7 +61,7 @@ public class AppointmentRequestAdapter  extends RecyclerView.Adapter<Appointment
         holder.reject.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new AlertDialog.Builder(context).setCancelable(false).setMessage("Are you sure you want to reject the appointment request of "+appointmentRequest.getName()+" for "+appointmentRequest.getDateAndTime()+"?")
+                new AlertDialog.Builder(context).setCancelable(false).setMessage("Are you sure you want to decline the appointment request of "+appointmentRequest.getName()+" for "+appointmentRequest.getDateAndTime()+"?")
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {

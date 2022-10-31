@@ -28,7 +28,7 @@ import doctor.doctorsappointment.R;
 public class PatientRegister extends AppCompatActivity {
 
     private TextInputLayout FirstNameTB,LastNameTB,MobileNoTB,EmailTB,PassTB,ConfirmPassTB;
-    private CountryCodePicker ccp;
+//    private CountryCodePicker ccp;
     private AppCompatButton register;
     private ProgressDialog progressDialog;
     private TextView goToLogin;
@@ -43,7 +43,7 @@ public class PatientRegister extends AppCompatActivity {
         EmailTB=findViewById(R.id.EmailTB);
         PassTB=findViewById(R.id.PassTB);
         ConfirmPassTB=findViewById(R.id.ConfirmPassTB);
-        ccp=findViewById(R.id.ccp);
+//        ccp=findViewById(R.id.ccp);
         goToLogin=findViewById(R.id.gotosign);
 
 
@@ -85,7 +85,8 @@ public class PatientRegister extends AppCompatActivity {
                                     public void onComplete(@NonNull Task<Void> task) {
                                         HashMap<String,String> hashMap=new HashMap<>();
                                         hashMap.put("Email",email);
-                                        hashMap.put("MobileNo",ccp.getSelectedCountryCodeWithPlus()+mobileNo);
+                                        hashMap.put("MobileNo",mobileNo);
+//                                        hashMap.put("MobileNo",ccp.getSelectedCountryCodeWithPlus()+mobileNo);
                                         hashMap.put("FirstName",firstName);
                                         hashMap.put("LastName",lastName);
                                         hashMap.put("UserType","Patient");

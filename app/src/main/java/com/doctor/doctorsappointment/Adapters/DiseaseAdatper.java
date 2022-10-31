@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -43,7 +44,8 @@ public class DiseaseAdatper extends RecyclerView.Adapter<DiseaseAdatper.ViewHold
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView diseasename,symptom,info;
+        private TextView diseasename,symptom;
+        private Button info;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             diseasename=itemView.findViewById(R.id.disease_or_doctor_name);

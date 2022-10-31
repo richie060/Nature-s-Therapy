@@ -32,16 +32,28 @@
         android:textColor="@color/lightTextColor">
     </TextView>
     <TextView
-        android:id="@+id/info"
+        android:id="@+id/phoneNo"
         android:layout_marginTop="2dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:textStyle="italic"
-        android:text="Tap to request an appointment or view details"
+        android:textSize="16sp"
+        android:text="Phone Number: dsf,fsd,fds,fg"
         android:paddingRight="10dp"
         android:paddingLeft="10dp"
         android:layout_marginBottom="8dp"
         android:textColor="@color/lightTextColor">
     </TextView>
+
+    <Button
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Request an appointment"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        />
+
 </LinearLayout>

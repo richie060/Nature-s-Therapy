@@ -4,10 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PatientFragments.FixAppointment"
-    android:gravity="center"
-    android:background="@color/innerColor"
+    android:gravity="top"
     android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_round_main_btn"
+        />
     <TextView
         android:id="@+id/name"
         android:layout_width="match_parent"
@@ -15,7 +21,7 @@
         android:textColor="@color/mainTextColor"
         android:textSize="25sp"
         android:paddingLeft="20dp"
-        android:text="Cydney Kiprotich"></TextView>
+        android:text="Weldon Kiprotich"></TextView>
     <TextView
         android:id="@+id/spl"
         android:layout_marginTop="10dp"
@@ -56,18 +62,9 @@
         android:gravity="center_horizontal"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:text="19/12/2011"></TextView>
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/setdate"
-        android:layout_marginTop="15dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Set Date"
-        android:paddingLeft="50dp"
-        android:paddingRight="50dp"
-        android:textColor="@color/innerColor"
-        android:background="@drawable/custom_round_main_btn">
-    </androidx.appcompat.widget.AppCompatButton>
+        android:text="19/12/2022"></TextView>
+
+
 
     <TextView
         android:id="@+id/time"
@@ -79,25 +76,39 @@
         android:gravity="center_horizontal"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:text="19/12/2011"></TextView>
+        android:text="19/12/2022"></TextView>
+
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/settime"
+        android:id="@+id/setdate"
         android:layout_marginTop="15dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
         android:layout_height="wrap_content"
-        android:text="Set Time"
+        android:text="Set Date"
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
         android:textColor="@color/innerColor"
         android:background="@drawable/custom_round_main_btn">
     </androidx.appcompat.widget.AppCompatButton>
-
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/settime"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Time"
+        android:paddingLeft="50dp"
+        android:layout_gravity="center"
+        android:paddingRight="50dp"
+        android:textColor="@color/innerColor"
+        android:background="@drawable/custom_round_main_btn">
+    </androidx.appcompat.widget.AppCompatButton>
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/setappoinment"
         android:layout_marginTop="30dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Fix appointment"
+        android:text="Book NOW"
+        android:layout_gravity="center"
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
         android:textColor="@color/innerColor"

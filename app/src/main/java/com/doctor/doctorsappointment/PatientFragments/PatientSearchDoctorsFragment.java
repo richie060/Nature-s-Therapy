@@ -50,27 +50,6 @@ public class PatientSearchDoctorsFragment extends Fragment {
         progressDialog.setMessage("Loading...\nPlease wait...");
         progressDialog.show();
 
-
-//        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("UserDetails").child(
-//                FirebaseAuth.getInstance().getCurrentUser().getUid());
-//        ref.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                String type = snapshot.child("UserType").getValue().toString();
-//                if (type.equals("Patient")){
-//                    readPatients();
-//                }
-//                else {
-//                    readPatients();
-//                }
-//            }
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
-//            }
-//
-//        });
-//
-
         FirebaseDatabase.getInstance().getReference().child("UserDetails").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -97,7 +76,7 @@ public class PatientSearchDoctorsFragment extends Fragment {
         inflater.inflate(R.menu.my_search_menu,menu);
         MenuItem menuItem=menu.findItem(R.id.search_bar);
         searchView=(SearchView)menuItem.getActionView();
-        searchView.setQueryHint("Search Doctor/Specialization");
+        searchView.setQueryHint("Search Therapist/Specialization");
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {

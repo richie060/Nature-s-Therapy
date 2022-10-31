@@ -4,19 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PatientRegister"
     android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/filelogo"
+        android:layout_width="70dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/app_icon" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/artifika"
         android:gravity="center"
-        android:text="Doctor Register"
-        android:layout_marginTop="40dp"
+        android:text="Counsellor Register"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp"
         android:textColor="#2196F3"
         android:textSize="25sp" />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -27,11 +37,15 @@
             android:orientation="vertical">
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/FirstNameTB"
-                android:layout_width="280dp"
+                android:layout_width="match_parent"
                 app:boxBackgroundColor="@android:color/transparent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:theme="@style/DATILT">
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:boxStrokeColor="#000"
+                android:theme="@style/TextInputLayout"
+                >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -43,10 +57,13 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/LastNameTB"
-                android:layout_width="280dp"
+                android:layout_width="match_parent"
                 app:boxBackgroundColor="@android:color/transparent"
                 android:layout_height="wrap_content"
-                android:theme="@style/DATILT">
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:boxStrokeColor="#000"
+                android:theme="@style/TextInputLayout">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -57,25 +74,49 @@
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/AddressTB"
-                android:layout_width="280dp"
+                android:layout_width="match_parent"
                 app:boxBackgroundColor="@android:color/transparent"
                 android:layout_height="wrap_content"
-                android:theme="@style/DATILT">
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:boxStrokeColor="#000"
+                android:theme="@style/TextInputLayout">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Adress"
+                    android:hint="Address"
                     android:inputType="textEmailAddress" />
 
             </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/CityTB"
-                android:layout_width="280dp"
+                android:id="@+id/SpecialisationTB"
+                android:layout_width="match_parent"
                 app:boxBackgroundColor="@android:color/transparent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="7dp"
-                android:theme="@style/DATILT">
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:boxStrokeColor="#000"
+                android:theme="@style/TextInputLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Specialization"
+                    android:inputType="textEmailAddress" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/CityTB"
+                android:layout_width="match_parent"
+                app:boxBackgroundColor="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:boxStrokeColor="#000"
+                android:theme="@style/TextInputLayout">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -85,42 +126,30 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/SpecialisationTB"
-                android:layout_width="280dp"
-                app:boxBackgroundColor="@android:color/transparent"
-                android:layout_height="wrap_content"
-                android:theme="@style/DATILT">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Specialization"
-                    android:inputType="textEmailAddress" />
-
-            </com.google.android.material.textfield.TextInputLayout>
             <LinearLayout
-                android:layout_width="280dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="7dp">
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
 
-                <com.hbb20.CountryCodePicker
-                    android:id="@+id/ccp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                <!--                <com.hbb20.CountryCodePicker-->
+                <!--                    android:id="@+id/ccp"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="1" />-->
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/PhoneTB"
-                    android:layout_width="145dp"
+                    android:layout_width="match_parent"
                     app:boxBackgroundColor="@android:color/transparent"
-                    android:layout_height="wrap_content"
-                    android:theme="@style/DATILT">
+                    android:layout_height="wrap_content">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
                         android:hint="Mobile Number"
                         android:inputType="phone"
                         android:maxLength="10" />
@@ -128,10 +157,13 @@
             </LinearLayout>
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/EmailTB"
-                android:layout_width="280dp"
+                android:layout_width="match_parent"
                 app:boxBackgroundColor="@android:color/transparent"
                 android:layout_height="wrap_content"
-                android:theme="@style/DATILT">
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:boxStrokeColor="#000"
+                android:theme="@style/TextInputLayout">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -144,27 +176,33 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/PassTB"
-                android:layout_width="280dp"
+                android:layout_width="match_parent"
                 app:boxBackgroundColor="@android:color/transparent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="7dp"
-                android:theme="@style/DATILT"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:boxStrokeColor="#000"
+                android:theme="@style/TextInputLayout"
                 app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="5dp"
+
                     android:hint="Password"
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/ConfirmPassTB"
-                android:layout_width="280dp"
+                android:layout_width="match_parent"
                 app:boxBackgroundColor="@android:color/transparent"
                 android:layout_height="wrap_content"
-                android:theme="@style/DATILT"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:boxStrokeColor="#000"
+                android:theme="@style/TextInputLayout"
                 app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText

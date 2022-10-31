@@ -31,7 +31,7 @@ import doctor.doctorsappointment.R;
 public class DoctorRegister extends AppCompatActivity {
 
     private TextInputLayout FirstNameTB,LastNameTB,MobileNoTB,EmailTB,PassTB,ConfirmPassTB,SpecializationTB,AddressTB,cityTB;
-    private CountryCodePicker ccp;
+//    private CountryCodePicker ccp;
     private AppCompatButton register;
     private ProgressDialog progressDialog;
     private TextView goToLogin;
@@ -50,7 +50,7 @@ public class DoctorRegister extends AppCompatActivity {
         SpecializationTB=findViewById(R.id.SpecialisationTB);
         AddressTB=findViewById(R.id.AddressTB);
         ConfirmPassTB=findViewById(R.id.ConfirmPassTB);
-        ccp=findViewById(R.id.ccp);
+//        ccp=findViewById(R.id.ccp);
         goToLogin=findViewById(R.id.gotosign);
         cityTB=findViewById(R.id.CityTB);
 
@@ -106,7 +106,8 @@ public class DoctorRegister extends AppCompatActivity {
 
                                         HashMap<String,String> hashMap=new HashMap<>();
                                         hashMap.put("Email",email);
-                                        hashMap.put("MobileNo",ccp.getSelectedCountryCodeWithPlus()+mobileNo);
+//                                        hashMap.put("MobileNo",ccp.getSelectedCountryCodeWithPlus()+mobileNo);
+                                        hashMap.put("MobileNo",mobileNo);
                                         hashMap.put("FirstName",firstName);
                                         hashMap.put("LastName",lastName);
                                         hashMap.put("Id",FirebaseAuth.getInstance().getCurrentUser().getUid());

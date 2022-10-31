@@ -18,6 +18,9 @@ import android.text.Html;
 import android.view.MenuItem;
 import android.widget.CompoundButton;
 import android.widget.TextView;
+
+import com.doctor.doctorsappointment.PatientFragments.Connect;
+import com.doctor.doctorsappointment.PatientFragments.Games;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -88,7 +91,7 @@ public class PatientMainActivity extends AppCompatActivity implements Navigation
                         ActionBarDrawerToggle toggle =new ActionBarDrawerToggle(PatientMainActivity.this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
                         drawerLayout.addDrawerListener(toggle);
                         toggle.syncState();
-                        loadFragment(new PatientSearchDiseaseFragment(), "Search disease",R.id.search_disease);
+                        loadFragment(new PatientSearchDoctorsFragment(), "Therapist",R.id.search_disease);
                     }else{
                         logout();
                     }
@@ -112,14 +115,19 @@ public class PatientMainActivity extends AppCompatActivity implements Navigation
         int ID=0;
         switch (item.getItemId()){
             case R.id.search_disease:
-                fragment = new PatientSearchDiseaseFragment();
-                t = "Search disease";
+                fragment = new Connect();
+                t = "Get connected";
                 ID=R.id.search_disease;
                 break;
             case R.id.search_doctor:
                 fragment = new PatientSearchDoctorsFragment();
-                t = "Search doctors";
+                t = "Therapist";
                 ID=R.id.search_doctor;
+                break;
+            case R.id.games:
+                fragment = new Games();
+                t = "Games";
+                ID=R.id.games;
                 break;
             case R.id.pending_apt:
                 fragment = new PendingAppointmentFragment();

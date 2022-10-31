@@ -71,7 +71,7 @@ public class AppointmentRequestFragment extends Fragment {
         inflater.inflate(R.menu.my_search_menu,menu);
         MenuItem menuItem=menu.findItem(R.id.search_bar);
         searchView=(SearchView)menuItem.getActionView();
-        searchView.setQueryHint("Search Patients");
+        searchView.setQueryHint("Search users");
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {

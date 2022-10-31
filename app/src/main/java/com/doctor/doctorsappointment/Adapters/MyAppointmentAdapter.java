@@ -53,7 +53,7 @@ public class MyAppointmentAdapter extends RecyclerView.Adapter<MyAppointmentAdap
         holder.cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new AlertDialog.Builder(context).setCancelable(false).setMessage("Are you sure you want to cancel the appointment of Dr. "+request.getName()+" for "+request.getDateAndTime()+"?")
+                new AlertDialog.Builder(context).setCancelable(false).setMessage("Are you sure you want to cancel the appointment of Therapist. "+request.getName()+" for "+request.getDateAndTime()+"?")
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {

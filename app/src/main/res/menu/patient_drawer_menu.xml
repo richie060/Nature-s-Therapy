@@ -5,14 +5,30 @@
         android:id="@+id/nav_switch"
         android:title="Dark Mode"
         app:actionLayout="@layout/switch_layout" />
-    <item android:id="@+id/search_disease"
-        android:title="Search disease"></item>
     <item android:id="@+id/search_doctor"
-        android:title="Search doctors"></item>
+        android:icon="@drawable/doctor"
+        android:title="Therapist
+"></item>
+    <item android:id="@+id/search_disease"
+        android:title="Get connected"
+        android:icon="@drawable/app_icon"
+        ></item>
+    <item android:id="@+id/games"
+        android:icon="@drawable/game1"
+        android:title="Games"></item>
     <item android:id="@+id/pending_apt"
-        android:title="Pending appointments"></item>
+        android:title="Pending appointments"
+        android:icon="@drawable/ic_pending"
+        ></item>
     <item android:id="@+id/apt"
-        android:title="My Appointments"></item>
+        android:title="My Appointments"
+        android:icon="@drawable/ic_appoint"
+        ></item>
+    <item android:id="@+id/share"
+        android:title="Share"
+        android:icon="@drawable/ic_share"
+        ></item>
     <item android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
         android:title="Logout"></item>
 </menu>

@@ -19,6 +19,24 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/DoctorsAppointment/app/src/main/res/layout/item_disease_or_doctor.xml" value="0.33" />
         <entry key="..\:/Users/User/AndroidStudioProjects/DoctorsAppointment/app/src/main/res/layout/item_patient_apt.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/DoctorsAppointment/app/src/main/res/layout/switch_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Hospital/app/src/main/res/drawable/custom_round_main_btn.xml" value="0.13" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Hospital/app/src/main/res/layout/activity_ask_doctor_patient.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Hospital/app/src/main/res/layout/activity_connect.xml" value="0.5" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Hospital/app/src/main/res/layout/activity_doctor_register.xml" value="0.18" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Hospital/app/src/main/res/layout/activity_fix_appointment.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Hospital/app/src/main/res/layout/activity_games.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Hospital/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Hospital/app/src/main/res/layout/activity_main_patient.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Hospital/app/src/main/res/layout/activity_patient_login_register_choice.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Hospital/app/src/main/res/layout/activity_patient_register.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Hospital/app/src/main/res/layout/activity_registration_question.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Hospital/app/src/main/res/layout/activity_splash_screen.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Hospital/app/src/main/res/layout/drawer_header.xml" value="0.20108695652173914" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Hospital/app/src/main/res/layout/fragment_common.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Hospital/app/src/main/res/layout/item_apt_request.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Hospital/app/src/main/res/layout/item_disease_or_doctor.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Hospital/app/src/main/res/layout/item_patient_apt.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Hospital/app/src/main/res/menu/patient_drawer_menu.xml" value="0.19692307692307692" />
       </map>
     </option>
   </component>
